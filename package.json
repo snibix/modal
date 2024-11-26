@@ -1,19 +1,27 @@
 {
-  "name": "modal",
-  "private": true,
-  "version": "0.0.0",
+  "name": "snibix-modal",
+  "author": "Damien Jaworski",
+  "version": "0.9.0",
+  "description": "composant react modal",
+  "main": "dist/Modal.js",
+  "module": "dist/Modal.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snibix/modal.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "babel src/components -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
   "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "@eslint/js": "^9.13.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
@@ -24,5 +32,9 @@
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.11.0",
     "vite": "^5.4.10"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
