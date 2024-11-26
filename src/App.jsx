@@ -1,7 +1,7 @@
 import { useState } from "react";
 import closeModal from "./assets/close.svg";
-import "./assets/style/modal.css";
 import Modal from "./components/Modal";
+import "./components/Modal.css";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
