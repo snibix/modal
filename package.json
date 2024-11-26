@@ -1,7 +1,7 @@
 {
   "name": "snibix-modal",
   "author": "Damien Jaworski",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "composant react modal",
   "main": "dist/Modal.js",
   "module": "dist/Modal.js",
@@ -12,7 +12,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "babel src/components -d dist",
+    "build": "babel src/components -d dist && copy src\\components\\Modal.css dist\\",
     "lint": "eslint .",
     "preview": "vite preview"
   },
