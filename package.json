@@ -1,7 +1,7 @@
 {
   "name": "snibix-modal",
   "author": "Damien Jaworski",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "composant react modal",
   "main": "dist/Modal.js",
   "module": "dist/Modal.js",
@@ -16,6 +16,10 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "files": [
+    "dist/",
+    "src/components/Modal.css"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.25.9",
     "@babel/core": "^7.26.0",
