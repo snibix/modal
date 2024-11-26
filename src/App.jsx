@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./App.css";
 import closeModal from "./assets/close.svg";
+import "./assets/style/modal.css";
 import Modal from "./components/Modal";
 
 function App() {

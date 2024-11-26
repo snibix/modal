@@ -1,7 +1,7 @@
 {
   "name": "snibix-modal",
   "author": "Damien Jaworski",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "composant react modal",
   "main": "dist/Modal.js",
   "module": "dist/Modal.js",
