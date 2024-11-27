@@ -1,8 +1,54 @@
-# React + Vite
+# snibix-modal<br>
+A react component to create and customize modals
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Installation<br>
+to install,you can use or yarn
 
-Currently, two official plugins are available:
+```bash
+npm install snibix-modal
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+or
+
+```bash
+yarn install snibix-modal
+```
+
+# Documentations
+- isOpen: (boolean)<br>
+Defines whether the modal is open or closed (required)<br>
+
+- close: (function)
+<br>Used to close the modal<br>
+
+- children: (ReactNode)<br>
+The content displayed inside the modal. (Required)<br>
+
+- className: (string)<br>
+Custom class for styling the modal. (Optional)
+
+# Exemples
+
+```bash
+import React from "react";
+import Modal from "snibix-modal";
+
+function App() {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  return (
+    <>
+      <button onClick={() => setIsOpen(true)}>Open Modal</button>
+      <Modal isOpen={isOpen} close={() => setIsOpen(false)}>
+        <div className="modal-content">
+          <h2>Hello, World!</h2>
+          <button onClick={() => setIsOpen(false)}>Close</button>
+        </div>
+      </Modal>
+    </>
+  );
+}
+
+export default App;
+
+```
