@@ -4,26 +4,11 @@ A react component to create and customize modals
 
 # Installation
 
-to install,you can use or yarn
+to install,you can use npm or yarn
 
 ```bash
 npm install snibix-modal
-```
-
-=======
-A react component to create and customize modals
-
-# Installation
-
-to install,you can use or yarn
-
-```bash
-npm install snibix-modal
-```
-
 or
-
-```bash
 yarn install snibix-modal
 ```
 
