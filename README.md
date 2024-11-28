@@ -1,8 +1,19 @@
-# snibix-modal<br>
+# snibix-modal
 
 A react component to create and customize modals
 
-# Installation<br>
+# Installation
+
+to install,you can use or yarn
+
+```bash
+npm install snibix-modal
+```
+
+=======
+A react component to create and customize modals
+
+# Installation
 
 to install,you can use or yarn
 
@@ -18,21 +29,15 @@ yarn install snibix-modal
 
 # Documentations
 
-- isOpen: (boolean)<br>
-  Defines whether the modal is open or closed (required)<br>
+- isOpen: (boolean)
+  Defines whether the modal is open or closed (required)
 
 - close: (function)
-  <br>Used to close the modal<br>
+  Used to close the modal
 
-- children: (ReactNode)<br>
-  The content displayed inside the modal. (Required)<br>
+# Exemple
 
-- className: (string)<br>
-  Custom class for styling the modal. (Optional)
-
-# Exemples
-
-```bash
+```jsx
 import React from "react";
 import Modal from "snibix-modal";
 
@@ -53,5 +58,4 @@ function App() {
 }
 
 export default App;
-
 ```

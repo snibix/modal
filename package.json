@@ -12,7 +12,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "babel src/components -d dist && copy src\\components\\Modal.css dist\\",
+    "build": "babel src/components -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },

@@ -8,7 +8,6 @@ import React, { useEffect } from "react";
  * @param {boolean} props.isOpen - Determines whether the modal is open or closed.
  * @param {React.ReactNode} props.children - The content to display inside the modal.
  * @param {function} props.close - Function to close the modal, triggered on escape key or backdrop click.
- * @param {...Object} args - Additional props spread to the modal container.
  *
  * @example
  * // Basic usage:
@@ -39,18 +38,21 @@ function Modal({ isOpen, children, close, ...args }) {
     };
   }, [isOpen, close]);
 
+  const handleClick = (e) => {
+    if (e.target === e.currentTarget) {
+      close();
+    }
+  };
+
   return (
     isOpen && (
       <div
         {...args}
-        onClick={(e) => {
-          if (e.target === e.currentTarget) {
-            close();
-          }
-        }}
+        onClick={handleClick}
         style={{
           position: "fixed",
           inset: 0,
+          zIndex: 99,
         }}
       >
         {children}
